@@ -1,0 +1,124 @@
+[12:17] Nagulmeera Shaik
+Naming rules to declare class names: 1. class name should starts with upper case letter only.
+2. class name does not starts with digits or special characters.
+3. class name does not allows spaces.
+4. if class name contains more than one word then each word first letter should a upper case letter 
+Studentdetails   --> incorrect StudentDetails  --> Connect  
+
+[12:21] Nagulmeera Shaik
+//1-10
+class Example1 {
+  public static void main(String args[]) {     for (int i = 1; i <= 10; i++) {
+      System.out.print(i + " ");
+    }   }
+}
+
+[12:24] Nagulmeera Shaik
+import java.util.Scanner; class Example1 {
+  public static void main(String args[]) {     Scanner s = new Scanner(System.in);     System.out.println("Enter stop value");
+    int stop = s.nextInt();
+    for (int i = 1; i <= stop; i++) {
+      System.out.print(i + " ");
+    }   }
+}
+
+[12:28] Nagulmeera Shaik
+// 1-stop               150    1-150 import java.util.Scanner; class Example1 {
+  public static void main(String args[]) {     Scanner s = new Scanner(System.in);
+    System.out.println("Enter stop value");
+    int stop = s.nextInt();
+    for (int i = 1; i <= stop; i++) {
+      System.out.println(i);
+    }   }
+}
+
+
+
+
+[14:55] Nagulmeera Shaik
+//1. WAP to find factors of a given number 
+import java.util.Scanner; class Example1 {
+  public static void main(String args[]) {     Scanner s = new Scanner(System.in);
+    System.out.println("Enter number to find factors");
+    int num=s.nextInt();   // 50  --> 25       1- num/2     for(int i=1;i<=num/2;i++){
+      if(num%i==0){      // 50/25
+        System.out.println(i);
+      }
+    }
+  }
+}
+
+[14:57] Nagulmeera Shaik
+
+//1. WAP to find factors of a given number 
+import java.util.Scanner; class Example1 {
+  public static void main(String args[]) {     Scanner s = new Scanner(System.in);
+    int count=0;
+    System.out.println("Enter number to find factors");
+    int num=s.nextInt();   // 50  --> 25       1- num/2     for(int i=1;i<=num/2;i++){
+      if(num%i==0){      // 50/25
+        count++; 
+      }
+    }
+    System.out.println("Number of factors: "+count);
+  }
+}
+
+[15:00] Nagulmeera Shaik
+
+//1. WAP to find factors of a given number 
+import java.util.Scanner; class Example1 {
+  public static void main(String args[]) {     Scanner s = new Scanner(System.in);
+    int count=0;
+    System.out.println("Enter number to check it is prime or not");
+    int num=s.nextInt();   // 50  --> 25       1- num/2     for(int i=1;i<=num/2;i++){
+      if(num%i==0){      // 50/25
+        count++; 
+      }
+    }
+    if(count==1){
+      System.out.println("prime number");
+    }    
+    else{
+      System.out.println("Not a prime number");
+    }
+  }
+}
+
+[15:08] Nagulmeera Shaik
+
+//1. WAP to find factors of a given number 
+import java.util.Scanner; class Example1 {
+  public static void main(String args[]) {     Scanner s = new Scanner(System.in);
+    int count = 0;     for (int k = 1; k <= 100; k++) { // k=1,2,3,4,5,6,7...100
+      count = 0;
+      for (int i = 1; i <= k / 2; i++) {
+        if (k % i == 0) { // 50/25
+          count++;
+        }
+      }       if (count == 1) {
+        System.out.print(k + " ");
+      }
+    }   }
+}
+
+
+
+
+
+1. WAP to find factors of a given number 
+import java.util.Scanner; class Example1 {
+  public static void main(String args[]) {     Scanner s = new Scanner(System.in);
+    int count = 0,primecount=0;     for (int k = 1; k <= 100; k++) { // k=1,2,3,4,5,6,7...100       for (int i = 1; i <= k / 2; i++) { // 1<=1 count=2
+        if (k % i == 0) { // 3%1
+          count++;
+        }
+      }       if (count == 1) {
+           primecount++;
+        if(primecount%2!=0){
+        System.out.print(k + " "); // 2
+        }
+      }
+      count = 0;
+    }   }
+}
