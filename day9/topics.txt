@@ -1,0 +1,114 @@
+1. Local varaibles
+2. Instance varaibles
+3. default values for instance varaibles
+4. Pre increment/post increment
+5. Type casting
+
+
+
+
+class Example11 {  
+ public static void main(String args[]) {    
+ int i = 10;   
+ System.out.println(i);   
+ i = i++;    
+System.out.println(i);   
+}}
+
+
+class Example11 {   
+  int i;  
+  float b;  
+  double d;  
+  char c;  
+  boolean e;  
+  public void m1() {    
+    System.out.println("int value: " + i);   
+    System.out.println("float value: " + b);    
+    System.out.println("double value: " + d);    
+    System.out.println("char value: " + c);    
+    System.out.println("boolean value: " + e);  
+  }  
+  public static void main(String args[]) {    
+    Example11 obj = new Example11();    
+    obj.m1();  
+  }
+}
+
+//if we declared locally and not initialized then it shows error
+//if we declared instance variable  and not initialized then it prints their default value
+
+
+int i = 10;   
+System.out.println(i);   
+ i = ++i; // pre increment   
+ System.out.println(i);
+
+
+int i = 10;    
+while (true) {      System.out.println("hello");      i++;    }
+
+
+
+
+  if (true) {         
+System.out.println("hi");  
+  } else {      
+System.out.println("hello");    }
+
+
+   int i = 10;     
+if (false) {     
+ System.out.println("hi");   
+ } else {     
+ System.out.println("hello");
+
+
+
+
+    short i = 5;    
+i = i * 10;   // 2=4    
+System.out.print(i);
+
+
+
+
+type casting 
+implicit
+eplicit
+
+
+
+byte b=10;
+    int a=b;
+    System.out.println(a);
+
+
+
+
+
+   byte b=10;
+    int a=b;
+    System.out.println(a);
+
+
+    int a=12;          byte b=(byte)a;
+    System.out.println(b);
+
+
+
+
+  int ch=99;
+    char i=(char)ch;
+    System.out.println(i);
+
+answer=c
+
+float i=34.55f;
+      int b=(int)i;
+    System.out.println(i);
+
+
+
+
+
